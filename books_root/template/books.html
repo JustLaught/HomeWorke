@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+<!-- Create list whith books in: ul > li. -->
+{% block main_space %}
+<ol style="display: block; text-align: center;">
+    <li><a href="{% url 'book_app:books' 'stiven_king_mers' %}">Stiven King ©️. "Mister Mercedes"</a></li>
+    <li><a href="{% url 'book_app:books' '11_22_63' %}">Stiven King ©️. "11 22 63"</a></li>
+    <li><a href="{% url 'book_app:books' 'gluhovski_metro_2033' %}">Dmitri Gluhovski ©️. "Metro 2033"</a></li>
+    <li><a href="{% url 'book_app:books' 'gluhovski_metro_2034' %}">Dmitri Gluhovski ©️. "Metro 2034"</a></li>
+    <li><a href="{% url 'book_app:books' 'gluhovski_metro_2035' %}">Dmitri Gluhovski ©️. "Metro 2035"</a></li>
+</ol>
+{% endblock %}

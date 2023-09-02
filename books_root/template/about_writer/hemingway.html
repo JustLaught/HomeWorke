@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+{% block main_space %}
+<section>
+    <h2>About Хемінгуе́й</h2>
+    <p>Ерне́ст Мі́ллер Хемінгуе́й, також Ге́мінґвей[6][7][8] (англ. Ernest Miller Hemingway, МФА: [ˈɜrnɪst ˈmɪɫəʳ ˈhɛmɪŋweɪ] (амер) або МФА: [ˈɜːnɪst ˈmɪlə ˈhɛmɪŋwɛɪ] (брит); 21 липня 1899 — 2 липня 1961) — американський письменник і журналіст, лауреат Нобелівської премії з літератури 1954 року, лауреат Пулітцерівської премії 1953 року. Здобув широку популярність завдяки своїм романам та оповіданням, а також завдяки активному та наповненому пригодами життю. Його лаконічний і насичений стиль оповіді відіграв значну роль у літературі XX століття.</p>
+    <hr>
+    <ol>
+        <li><a href="{% url 'book_app:books' 'gluhovski_metro_2033' %}">Dmitri Gluhovski ©️. "Metro 2033"</a></li>
+        <li><a href="{% url 'book_app:books' 'gluhovski_metro_2034' %}">Dmitri Gluhovski ©️. "Metro 2034"</a></li>
+        <li><a href="{% url 'book_app:books' 'gluhovski_metro_2035' %}">Dmitri Gluhovski ©️. "Metro 2035"</a></li>
+    </ol>
+</section>
+{% endblock %}

@@ -1,0 +1,9 @@
+{% extends 'base.html' %}
+{% block main_space %}
+    <ul class="main_space_writers" style="list-style-type: none;">
+        <!-- <li><a href="https://uk.wikipedia.org/wiki/%D0%95%D1%80%D0%BD%D0%B5%D1%81%D1%82_%D0%A5%D0%B5%D0%BC%D1%96%D0%BD%D0%B3%D1%83%D0%B5%D0%B9"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Ernest_Hemingway_Writing_at_Campsite_in_Kenya_-_NARA_-_192655.jpg/250px-Ernest_Hemingway_Writing_at_Campsite_in_Kenya_-_NARA_-_192655.jpg" alt="Hemingway_jpg">Hemingway</a></li>
+        <li><a href="https://en.wikipedia.org/wiki/William_Shakespeare"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/William_Shakespeare_by_John_Taylor.jpg/220px-William_Shakespeare_by_John_Taylor.jpg" alt="Shakespeare.jpg">Shakespeare</a></li> -->
+        <li><a href="{% url 'book_app:writers' 'hemingway' %}"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Ernest_Hemingway_Writing_at_Campsite_in_Kenya_-_NARA_-_192655.jpg/250px-Ernest_Hemingway_Writing_at_Campsite_in_Kenya_-_NARA_-_192655.jpg" alt="Hemingway_jpg">Hemingway</a></li>
+        <li><a href="{% url 'book_app:writers' 'shakespeare' %}"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/William_Shakespeare_by_John_Taylor.jpg/220px-William_Shakespeare_by_John_Taylor.jpg" alt="Shakespeare.jpg">Shakespeare</a></li>
+    </ul>
+{% endblock %}

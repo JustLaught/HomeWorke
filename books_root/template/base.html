@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Book Website</title>
+    <style>
+        body, h1, h2, p, ul, li {
+        margin: 0;
+        padding: 0;
+    }
+
+    /* Apply a background color and set font styles */
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+        color: #333;
+        line-height: 1.6;
+    }
+
+    /* Style the header section */
+    header {
+        background-color: #333;
+        color: #fff;
+        text-align: center;
+        padding: 1em 0;
+    }
+
+    header h1 {
+        font-size: 2em;
+    }
+
+    nav ul {
+        list-style: none;
+    }
+
+    nav ul li {
+        display: inline;
+        margin-right: 20px;
+    }
+
+    nav ul li a {
+        text-decoration: none;
+        color: #fff;
+    }
+
+    /* Style the main content section */
+    main {
+        max-width: 800px;
+        margin: 20px auto;
+        padding: 20px;
+        background-color: #fff;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    main ul li{
+        display: inline;
+        margin-bottom: 2em;
+        padding-bottom: 2em;
+    }
+
+    /* Style the footer section */
+    footer {
+        text-align: center;
+        padding: 10px 0;
+        background-color: #333;
+        color: #fff;
+    }
+
+    /* Add styles for links */
+    a {
+        color: #007BFF;
+        text-decoration: none;
+    }
+
+    a:hover {
+        text-decoration: underline;
+        border: 1px solid #fff;
+        border-radius: 5px;
+        background-color: #f4f4f4;
+        color: #000;
+    }
+    </style><!-- Link to your CSS file for styling -->
+</head>
+<body>
+    <header>
+        <h1>Welcome to My Book Website</h1>
+        {% include 'nav_menu.html' %}
+    </header>
+
+    <main>
+        {% block main_space %}{% endblock %}
+    </main>
+
+    <footer>
+        <p>&copy; 2023 My Book Website. All rights reserved.</p>
+    </footer>
+</body>
+</html>
